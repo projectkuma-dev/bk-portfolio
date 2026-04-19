@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brad Kunisaki — Product Leader</title>
+<meta name="description" content="Product Leader with 12+ years building mission-critical software and AI products for defense, logistics, and government customers.">
+
+<!-- ── Open Graph ── -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brad Kunisaki — Product Leader">
+<meta property="og:description" content="Product Leader · Systems Thinker. 12+ years building mission-critical software and AI products for defense, logistics, and government customers.">
+<meta property="og:url" content="https://bradkunisaki.com">
+<meta property="og:image" content="https://bradkunisaki.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Brad Kunisaki — Product Leader">
+<meta name="twitter:description" content="Product Leader · Systems Thinker. 12+ years building mission-critical software and AI products for defense, logistics, and government customers.">
+
+<!-- ── Favicon (inline SVG → data URI, no external file needed) ── -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231B3461'/%3E%3Ctext x='16' y='22' font-family='Georgia%2Cserif' font-size='14' font-weight='700' fill='white' text-anchor='middle' letter-spacing='0.5'%3EBK%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231B3461'/%3E%3Ctext x='16' y='22' font-family='Georgia%2Cserif' font-size='14' font-weight='700' fill='white' text-anchor='middle'%3EBK%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#1B3461">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+
+<style>
+/* ════════════════════════════════════════
+   SCREEN STYLES
+════════════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#F2F5FA;
+  --surface:#FFFFFF;
+  --border:#D8E2F0;
+  --border-sub:#E6EDF8;
+  --tx:#111827;
+  --tx2:#4B5563;
+  --tx3:#9CA3AF;
+  --navy:#1B3461;
+  --navy-mid:#2952A3;
+  --navy-light:#EBF0FA;
+  --navy-dim:#7B9DD4;
+  --navy-bright:#3A6BC4;
+  --fd:'Lora',Georgia,serif;
+  --fb:'DM Sans',system-ui,sans-serif;
+  --r:6px;
+  --rl:12px;
+  --ease:200ms cubic-bezier(.4,0,.2,1);
+  --sh:0 1px 4px rgba(27,52,97,.07);
+  --sh-md:0 4px 20px rgba(27,52,97,.11);
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font-family:var(--fb);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+
+/* ── Header ── */
+.hd{background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:200;box-shadow:var(--sh)}
+.hd-in{max-width:920px;margin:0 auto;padding:0 24px;height:62px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;cursor:pointer;user-select:none;flex-shrink:0}
+.av{width:36px;height:36px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:13px;font-weight:600;flex-shrink:0;letter-spacing:.02em}
+.bn{font-family:var(--fd);font-size:16px;font-weight:600;letter-spacing:-.01em;color:var(--tx)}
+.hd-right{display:flex;align-items:center;gap:6px;flex-shrink:0}
+.tabs{display:flex;gap:2px}
+.tb{background:none;border:none;cursor:pointer;font-family:var(--fb);font-size:13.5px;font-weight:500;color:var(--tx2);padding:6px 14px;border-radius:var(--r);transition:color var(--ease),background var(--ease);position:relative;letter-spacing:.01em;white-space:nowrap}
+.tb:hover{color:var(--tx);background:var(--navy-light)}
+.tb.on{color:var(--navy);background:var(--navy-light);font-weight:600}
+.tb.on::after{content:'';position:absolute;bottom:-1px;left:14px;right:14px;height:2px;background:var(--navy);border-radius:2px 2px 0 0}
+
+/* Print Resume button — visually separate from tabs */
+.hd-divider{width:1px;height:22px;background:var(--border);margin:0 4px;flex-shrink:0}
+.print-btn{display:flex;align-items:center;gap:6px;background:none;border:1px solid var(--border);cursor:pointer;font-family:var(--fb);font-size:12.5px;font-weight:500;color:var(--tx2);padding:5px 12px;border-radius:var(--r);transition:color var(--ease),background var(--ease),border-color var(--ease);white-space:nowrap;letter-spacing:.01em}
+.print-btn:hover{color:var(--navy);background:var(--navy-light);border-color:var(--navy-dim)}
+.print-btn svg{width:13px;height:13px;flex-shrink:0;fill:currentColor}
+
+/* ── Main wrapper ── */
+.main{max-width:920px;margin:0 auto;padding:44px 24px 100px;width:100%}
+.panel{animation:tabIn .22s ease}
+@keyframes tabIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.section{margin-bottom:66px}
+.sl{font-size:10.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--tx3);margin-bottom:22px;display:flex;align-items:center;gap:12px}
+.sl::after{content:'';flex:1;height:1px;background:var(--border)}
+
+/* ── Hero ── */
+.hero{margin-bottom:52px;padding-bottom:52px;border-bottom:1px solid var(--border)}
+.hero-ey{font-size:11.5px;font-weight:600;color:var(--navy-mid);letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:9px}
+.hero-ey::before{content:'';width:20px;height:2px;background:var(--navy-mid);border-radius:2px;display:inline-block;flex-shrink:0}
+.hero-name{font-family:var(--fd);font-size:clamp(34px,5vw,52px);font-weight:600;line-height:1.1;letter-spacing:-.025em;margin-bottom:18px;color:var(--tx)}
+.hero-tag{font-size:17px;color:var(--tx2);max-width:560px;line-height:1.6;font-weight:300}
+
+/* ── Collapsible Career Timeline ── */
+.tl-outer{position:relative}
+.tl-spine{position:absolute;left:15px;top:16px;bottom:16px;width:2px;background:linear-gradient(to bottom,var(--navy-light) 0%,var(--border) 40%,var(--border) 60%,var(--navy-light) 100%);border-radius:2px;z-index:0}
+.tl-item{display:grid;grid-template-columns:32px 1fr;gap:0;margin-bottom:10px;position:relative}
+.tl-dot-col{display:flex;justify-content:center;padding-top:18px;z-index:1}
+.tl-dot{width:12px;height:12px;border-radius:50%;border:2.5px solid var(--bg);flex-shrink:0;cursor:pointer;transition:transform var(--ease),box-shadow var(--ease)}
+.tl-dot:hover{transform:scale(1.25);box-shadow:0 0 0 4px rgba(27,52,97,.13)}
+.tl-dot.dp{background:var(--navy)}
+.tl-dot.dt{background:var(--navy-bright)}
+.tl-dot.de{background:var(--tx3)}
+.tl-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);margin-left:14px;overflow:hidden;transition:box-shadow var(--ease),border-color var(--ease);box-shadow:var(--sh)}
+.tl-card:hover{box-shadow:var(--sh-md);border-color:var(--navy-dim)}
+.tl-summary{padding:14px 18px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;user-select:none}
+.tl-left{flex:1;min-width:0}
+.tl-role{font-size:14px;font-weight:600;color:var(--tx);line-height:1.25}
+.tl-meta{font-size:11.5px;color:var(--tx3);margin-top:3px;display:flex;gap:10px;flex-wrap:wrap}
+.tl-co{color:var(--navy-mid);font-weight:500}
+.tl-right{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.tl-badge{font-size:10px;font-weight:600;padding:2px 8px;border-radius:100px;white-space:nowrap;letter-spacing:.04em}
+.tl-badge.dp{background:var(--navy-light);color:var(--navy)}
+.tl-badge.dt{background:#EFF6FF;color:#1D4ED8}
+.tl-badge.de{background:#F3F4F6;color:#4B5563}
+.tl-chevron{color:var(--tx3);font-size:15px;transition:transform var(--ease),color var(--ease);flex-shrink:0}
+.tl-chevron.open{transform:rotate(180deg);color:var(--navy)}
+.tl-detail{border-top:1px solid var(--border-sub);padding:14px 18px 16px;animation:slideDown .18s ease}
+@keyframes slideDown{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+.tl-ms{list-style:none;display:flex;flex-direction:column;gap:5px}
+.tl-ms li{font-size:13px;color:var(--tx2);padding-left:15px;position:relative;line-height:1.5}
+.tl-ms li::before{content:'·';position:absolute;left:4px;color:var(--navy-dim);font-size:18px;line-height:1.1}
+.tl-ip-btn{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:600;color:var(--navy);background:var(--navy-light);padding:3px 10px;border-radius:100px;margin-top:10px;cursor:pointer;border:none;font-family:var(--fb);transition:background var(--ease),color var(--ease)}
+.tl-ip-btn:hover{background:var(--navy);color:#fff}
+.tl-legend{display:flex;gap:18px;margin-bottom:18px;flex-wrap:wrap}
+.tl-legend-item{display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--tx3)}
+.tl-legend-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+
+/* ── Inflection Points ── */
+.ip-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(262px,1fr));gap:14px}
+.ip-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);padding:22px;position:relative;overflow:hidden;transition:box-shadow var(--ease);box-shadow:var(--sh)}
+.ip-card:hover{box-shadow:var(--sh-md)}
+.ip-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--navy),var(--navy-bright))}
+.ip-yr{font-size:10.5px;font-weight:600;color:var(--navy-mid);letter-spacing:.09em;text-transform:uppercase;margin-bottom:7px}
+.ip-title{font-family:var(--fd);font-size:16px;font-weight:600;line-height:1.3;margin-bottom:10px;color:var(--tx)}
+.ip-ctx{font-size:13px;color:var(--tx2);line-height:1.65;margin-bottom:12px}
+.ip-why{font-size:12.5px;color:var(--tx2);line-height:1.55;padding-top:12px;border-top:1px solid var(--border-sub);font-style:italic}
+.ip-why strong{font-style:normal;font-weight:600;color:var(--tx);font-size:10px;text-transform:uppercase;letter-spacing:.06em;display:block;margin-bottom:4px}
+
+/* ── Case Studies ── */
+.cs-grid{display:flex;flex-direction:column;gap:13px}
+.cs-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;transition:box-shadow var(--ease),border-color var(--ease);box-shadow:var(--sh)}
+.cs-card:hover{box-shadow:var(--sh-md);border-color:var(--navy-dim)}
+.cs-hd{padding:22px 26px;cursor:pointer;display:grid;grid-template-columns:1fr auto;gap:14px;align-items:start;user-select:none}
+.cs-meta{display:flex;align-items:center;gap:9px;margin-bottom:7px;flex-wrap:wrap}
+.cs-tag{font-size:10.5px;font-weight:600;letter-spacing:.06em;color:var(--navy);background:var(--navy-light);padding:2px 9px;border-radius:100px;white-space:nowrap}
+.cs-co{font-size:11.5px;color:var(--tx3)}
+.cs-title{font-family:var(--fd);font-size:18px;font-weight:600;letter-spacing:-.01em;line-height:1.3;color:var(--tx)}
+.cs-right{display:flex;align-items:flex-start;gap:12px;flex-shrink:0}
+.cs-stat{text-align:right}
+.cs-sv{font-family:var(--fd);font-size:20px;font-weight:600;color:var(--navy);line-height:1.1}
+.cs-sl{font-size:10.5px;color:var(--tx2);max-width:140px;text-align:right;margin-top:3px;line-height:1.35}
+.cs-icon{align-self:center;color:var(--tx3);font-size:16px;transition:transform var(--ease);flex-shrink:0}
+.cs-icon.open{transform:rotate(180deg);color:var(--navy)}
+.cs-body{padding:18px 26px 26px;border-top:1px solid var(--border-sub);animation:slideDown .18s ease}
+.cs-sec{padding:14px 0;border-bottom:1px solid var(--border-sub)}
+.cs-sec:last-child{border-bottom:none;padding-bottom:0}
+.cs-lbl{font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--navy-mid);margin-bottom:7px}
+.cs-txt{font-size:14px;line-height:1.72;color:var(--tx2)}
+.cs-ul{list-style:none;display:flex;flex-direction:column;gap:5px}
+.cs-ul li{font-size:14px;color:var(--tx2);padding-left:15px;position:relative;line-height:1.5}
+.cs-ul li::before{content:'→';position:absolute;left:0;color:var(--navy-dim);font-size:11px;top:3px}
+.cs-hard{background:var(--navy-light);border-left:3px solid var(--navy-dim);border-radius:0 var(--r) var(--r) 0;padding:14px 16px;font-size:13.5px;color:var(--tx2);line-height:1.65;font-style:italic}
+
+/* ── Skills ── */
+.sk-layout{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-bottom:60px}
+.sk-t{font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--tx3);margin-bottom:12px}
+.sk-list{display:flex;flex-direction:column;gap:5px}
+.sk-item{display:flex;align-items:center;justify-content:space-between;font-size:13.5px;color:var(--tx2);padding:7px 10px;border-radius:var(--r);background:var(--surface);border:1px solid var(--border);transition:border-color var(--ease),color var(--ease);box-shadow:var(--sh)}
+.sk-item:hover{border-color:var(--navy-dim);color:var(--tx)}
+.sk-lnk{font-size:10px;font-weight:600;color:var(--navy);background:var(--navy-light);padding:2px 7px;border-radius:100px;cursor:pointer;border:none;font-family:var(--fb);white-space:nowrap;transition:background var(--ease),color var(--ease);flex-shrink:0}
+.sk-lnk:hover{background:var(--navy);color:#fff}
+
+/* ── Principles ── */
+.pr-list{display:flex;flex-direction:column}
+.pr-item{padding:22px 0;border-bottom:1px solid var(--border-sub);display:grid;grid-template-columns:1fr auto;gap:22px;align-items:start}
+.pr-item:last-child{border-bottom:none}
+.pr-title{font-family:var(--fd);font-size:16px;font-weight:600;margin-bottom:7px;line-height:1.3;color:var(--tx)}
+.pr-body{font-size:14px;color:var(--tx2);line-height:1.72;max-width:580px}
+.pr-num{font-family:var(--fd);font-size:30px;font-weight:600;color:var(--border);line-height:1;user-select:none;padding-top:4px}
+
+/* ── Related CS drawer (skills tab) ── */
+.related-cs{margin-bottom:66px;animation:slideDown .2s ease}
+.dismiss-btn{background:none;border:none;cursor:pointer;font-size:12.5px;color:var(--tx3);font-family:var(--fb);padding:0;transition:color var(--ease)}
+.dismiss-btn:hover{color:var(--tx)}
+
+/* ── Background ── */
+.bg-sec{margin-bottom:44px}
+.bg-t{font-family:var(--fd);font-size:19px;font-weight:600;margin-bottom:16px;color:var(--tx)}
+.bg-item{display:flex;justify-content:space-between;align-items:baseline;padding:12px 0;border-bottom:1px solid var(--border-sub);gap:16px}
+.bg-item:last-child{border-bottom:none}
+.bg-item-text{flex:1;min-width:0}
+.bg-in{font-size:14px;font-weight:500;color:var(--tx)}
+.bg-sub{font-size:12.5px;color:var(--tx2);margin-top:1px}
+.bg-yr{font-size:12px;color:var(--tx3);white-space:nowrap;flex-shrink:0}
+
+/* ── Contact ── */
+.ct-layout{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.ct-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);padding:26px;box-shadow:var(--sh)}
+.ct-hd{font-family:var(--fd);font-size:19px;font-weight:600;margin-bottom:18px;color:var(--tx)}
+.ct-link{display:flex;align-items:center;gap:11px;font-size:14px;font-weight:500;color:var(--tx);text-decoration:none;padding:11px 0;border-bottom:1px solid var(--border-sub);transition:color var(--ease)}
+.ct-link:last-child{border-bottom:none}
+.ct-link:hover{color:var(--navy)}
+.ct-icon{width:32px;height:32px;border-radius:var(--r);background:var(--navy-light);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0;color:var(--navy);font-weight:600}
+.lk-list{list-style:none;display:flex;flex-direction:column;gap:8px}
+.lk-list li{font-size:13.5px;color:var(--tx2);padding-left:16px;position:relative;line-height:1.5}
+.lk-list li::before{content:'→';position:absolute;left:0;color:var(--navy);font-size:12px;top:3px}
+.ct-note{background:var(--navy-light);border-left:3px solid var(--navy);border-radius:0 var(--r) var(--r) 0;padding:18px 22px;font-size:14px;line-height:1.75;color:var(--tx2);font-style:italic;margin-top:22px}
+
+/* ── Mobile ── */
+@media(max-width:720px){
+  .hd-in{padding:0 14px;gap:8px}
+  .main{padding:28px 16px 80px}
+  .bn{display:none}
+  .tb{padding:5px 9px;font-size:12.5px}
+  .print-btn span{display:none}
+  .print-btn{padding:5px 8px}
+  .sk-layout{grid-template-columns:1fr}
+  .ct-layout{grid-template-columns:1fr}
+  .ip-grid{grid-template-columns:1fr}
+  .cs-hd{grid-template-columns:1fr}
+  .cs-right{margin-top:4px}
+  .cs-stat{text-align:left}
+  .cs-sl{text-align:left;max-width:100%}
+  .hero{margin-bottom:36px;padding-bottom:36px}
+  .section{margin-bottom:48px}
+  .pr-item{grid-template-columns:1fr}
+  .pr-num{display:none}
+  .tl-right{gap:6px}
+  .tl-badge{display:none}
+}
+@media(max-width:420px){
+  .tabs{gap:0}
+  .tb{padding:5px 7px;font-size:12px}
+  .hero-name{font-size:30px}
+}
+
+/* ════════════════════════════════════════
+   PRINT STYLES  — resume layout
+   Activated by window.print() only.
+   The #print-resume element is built
+   dynamically in JS and hidden on screen.
+════════════════════════════════════════ */
+#print-resume{display:none}
+
+@media print {
+  /* Hide entire screen UI */
+  body > header,
+  body > main,
+  body > :not(#print-resume) { display:none !important }
+
+  /* Show only the resume */
+  #print-resume { display:block !important }
+
+  /* Page setup */
+  @page {
+    margin: 18mm 16mm 16mm 16mm;
+    size: letter portrait;
+  }
+
+  * { box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact }
+
+  /* ── Resume base ── */
+  #print-resume {
+    font-family: 'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 9.5pt;
+    line-height: 1.45;
+    color: #111827;
+    background: white;
+    width: 100%;
+  }
+
+  /* ── Resume header block ── */
+  .rh {
+    border-bottom: 2pt solid #1B3461;
+    padding-bottom: 10pt;
+    margin-bottom: 14pt;
+  }
+  .rh-name {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 22pt;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: #111827;
+    line-height: 1;
+    margin-bottom: 5pt;
+  }
+  .rh-sub {
+    font-size: 9pt;
+    color: #1B3461;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    margin-bottom: 7pt;
+  }
+  .rh-contact {
+    display: flex;
+    gap: 18pt;
+    font-size: 8.5pt;
+    color: #4B5563;
+    flex-wrap: wrap;
+  }
+  .rh-contact span { display:flex; align-items:center; gap:4pt; }
+
+  /* ── Section headings ── */
+  .rs {
+    font-size: 7.5pt;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #1B3461;
+    border-bottom: 0.75pt solid #D8E2F0;
+    padding-bottom: 3pt;
+    margin: 14pt 0 8pt;
+  }
+
+  /* ── Summary ── */
+  .r-summary {
+    font-size: 9.5pt;
+    color: #374151;
+    line-height: 1.5;
+    max-width: 100%;
+    margin-bottom: 2pt;
+  }
+
+  /* ── Experience entries ── */
+  .re {
+    margin-bottom: 11pt;
+    page-break-inside: avoid;
+  }
+  .re-hd {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8pt;
+    margin-bottom: 1.5pt;
+  }
+  .re-role {
+    font-size: 10.5pt;
+    font-weight: 600;
+    color: #111827;
+  }
+  .re-period {
+    font-size: 8.5pt;
+    color: #6B7280;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .re-co {
+    font-size: 8.5pt;
+    color: #1B3461;
+    font-weight: 600;
+    margin-bottom: 4pt;
+  }
+  .re-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2pt;
+  }
+  .re-ul li {
+    font-size: 9pt;
+    color: #374151;
+    padding-left: 11pt;
+    position: relative;
+    line-height: 1.45;
+  }
+  .re-ul li::before {
+    content: '–';
+    position: absolute;
+    left: 0;
+    color: #7B9DD4;
+    font-size: 9pt;
+  }
+
+  /* ── Skills section (3-col) ── */
+  .r-sk-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10pt;
+  }
+  .r-sk-col-title {
+    font-size: 7.5pt;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #1B3461;
+    margin-bottom: 4pt;
+  }
+  .r-sk-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2pt;
+  }
+  .r-sk-list li {
+    font-size: 8.5pt;
+    color: #374151;
+    padding-left: 9pt;
+    position: relative;
+    line-height: 1.4;
+  }
+  .r-sk-list li::before {
+    content: '·';
+    position: absolute;
+    left: 1pt;
+    color: #7B9DD4;
+    font-size: 12pt;
+    line-height: 1.05;
+  }
+
+  /* ── Education / Certs two-col ── */
+  .r-edu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12pt;
+    align-items: start;
+  }
+  .r-edu-item { margin-bottom: 6pt; page-break-inside:avoid; }
+  .r-edu-deg { font-size: 9.5pt; font-weight: 600; color: #111827; }
+  .r-edu-inst { font-size: 8.5pt; color: #4B5563; }
+  .r-cert-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 6pt;
+    padding: 2.5pt 0;
+    border-bottom: 0.5pt solid #E6EDF8;
+    page-break-inside: avoid;
+  }
+  .r-cert-item:last-child { border-bottom: none; }
+  .r-cert-name { font-size: 8.5pt; color: #374151; }
+  .r-cert-yr { font-size: 8pt; color: #9CA3AF; white-space: nowrap; flex-shrink:0; }
+
+  /* ── Awards inline ── */
+  .r-award-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 6pt;
+    padding: 2.5pt 0;
+    border-bottom: 0.5pt solid #E6EDF8;
+    page-break-inside: avoid;
+  }
+  .r-award-item:last-child { border-bottom: none; }
+  .r-award-name { font-size: 8.5pt; color: #374151; }
+  .r-award-meta { font-size: 8pt; color: #9CA3AF; white-space: nowrap; flex-shrink:0; }
+
+  /* ── Page footer ── */
+  .r-footer {
+    margin-top: 18pt;
+    padding-top: 8pt;
+    border-top: 0.5pt solid #D8E2F0;
+    font-size: 7.5pt;
+    color: #9CA3AF;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- ══ SCREEN HEADER ══ -->
+<header class="hd">
+  <div class="hd-in">
+    <div class="brand" id="brand-logo">
+      <div class="av">BK</div>
+      <div class="bn">Brad Kunisaki</div>
+    </div>
+    <div class="hd-right">
+      <div class="tabs" id="tabs">
+        <button class="tb on" data-tab="work">Work</button>
+        <button class="tb" data-tab="skills">Skills &amp; Approach</button>
+        <button class="tb" data-tab="background">Background</button>
+        <button class="tb" data-tab="contact">Contact</button>
+      </div>
+      <div class="hd-divider"></div>
+      <button class="print-btn" onclick="triggerPrint()">
+        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M4 1h8a1 1 0 0 1 1 1v3H3V2a1 1 0 0 1 1-1zM2 6h12a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-1v-2H3v2H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zm9 1.5a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0zM4 11h8v3H4v-3z"/></svg>
+        <span>Print Resume</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ══ SCREEN MAIN ══ -->
+<main class="main" id="main"></main>
+
+<!-- ══ PRINT RESUME (hidden on screen, shown on print) ══ -->
+<div id="print-resume"></div>
+
+<script>
+// ═══════════════════════════════════════════════════════
+// DATA
+// ═══════════════════════════════════════════════════════
+const DATA = {
+  meta:{
+    name:"Brad Kunisaki",
+    eyebrow:"Product Leader · Systems Thinker",
+    tagline:"12+ years building mission-critical software and AI products for defense, logistics, and government customers."
+  },
+
+  caseStudies:[
+    {
+      id:"cs1",
+      tag:"AI · Defense Logistics",
+      title:"Transportation Intelligence Environment (TIE)",
+      company:"The Boeing Company",
+      period:"2023–Present",
+      stat:{v:"AI+",l:"LLM-powered data analytics platform for transportation logistics"},
+      problem:"USTRANSCOM needed a modern logistics intelligence platform that could surface actionable insights from massive, complex datasets. Traditional analytics tools were insufficient — operators lacked real-time feedback loops and the visualizations required to make fast, confident decisions.",
+      approach:"I led product strategy and design for TIE from the ground up, combining large language models with traditional analytics engines and historical transportation data. I facilitated prototype reviews with government stakeholders, drove roadmap prioritization, and maintained team alignment across a complex multi-stakeholder environment. The goal was always to make AI outputs operator-friendly, not just technically impressive.",
+      contributions:[
+        "Led design and roadmap development for the full AI-powered logistics application",
+        "Combined LLMs with traditional analytics to create intelligent feedback loops",
+        "Designed user-friendly visualizations tailored to operator decision-making workflows",
+        "Facilitated prototype reviews and stakeholder alignment sessions with USTRANSCOM",
+        "Program success resulted in significant additional funding and program growth"
+      ],
+      outcomes:"Project success drove significant program growth through additional funding. Delivered an AI-powered platform that translated complex logistics data into actionable operator intelligence — demonstrating the value of combining LLM capabilities with domain-specific analytics in a defense context.",
+      hard:"Bridging the gap between what AI could do and what government operators would actually trust and use. Designing for adoption in a high-stakes, low-tolerance-for-error environment required constant calibration between technical capability and user confidence."
+    },
+    {
+      id:"cs2",
+      tag:"Platform · SDLC",
+      title:"LogC2 Licensed Product Transformation",
+      company:"The Boeing Company",
+      period:"2023–Present",
+      stat:{v:"End-to-end",l:"SDLC transformation across a licensed product suite"},
+      problem:"A suite of licensed logistics products had accumulated technical debt, inconsistent delivery practices, and pain points across the full software development lifecycle — from planning through deployment. The program needed a structured transformation to restore delivery velocity and product quality.",
+      approach:"I spearheaded the transformation by first conducting a systematic assessment of pain points across the SDLC. I then collaborated with cross-functional teams to design and implement targeted improvements at each stage — planning, development, testing, and deployment. Stakeholder alignment was central throughout.",
+      contributions:[
+        "Led full SDLC assessment and pain point analysis across the product suite",
+        "Designed and implemented process improvements from planning through deployment",
+        "Collaborated cross-functionally to optimize products and ensure program success",
+        "Served as both Product Lead and SDLC Lead, maintaining strategic and delivery accountability"
+      ],
+      outcomes:"Successfully transformed the delivery lifecycle for a critical licensed product suite. Improved product quality, delivery consistency, and team confidence across the program. Established repeatable practices that strengthened the program's long-term health.",
+      hard:"Driving process change in a program with established habits and high delivery pressure. Getting buy-in required demonstrating quick wins while maintaining momentum on long-term structural improvements."
+    },
+    {
+      id:"cs3",
+      tag:"0→1 · Government",
+      title:"ICODES JECD &amp; SSDM — Product Launches",
+      company:"The Boeing Company",
+      period:"2014–2023",
+      stat:{v:"New-to-Market",l:"Multi-branch military products serving joint warfighter needs"},
+      problem:"The U.S. military needed a new unit move system that had never existed in the market before. Multiple service branches had distinct operational use cases and user archetypes that needed to be understood, reconciled, and designed for in a single coherent product.",
+      approach:"I collaborated directly with primary user representatives across multiple service branches to map use cases and develop detailed user archetypes. I led requirements elicitation from the ground up and drove the design of a new-to-market system. After a successful initial launch, I oversaw subsequent releases to extend capability and address evolved user needs.",
+      contributions:[
+        "Embedded with primary user reps across service branches to surface real operational workflows",
+        "Led requirements elicitation and user archetype development for a novel warfighter capability",
+        "Drove design of a new-to-market unit move system from zero",
+        "Managed successful initial launch and oversaw subsequent release cycles"
+      ],
+      outcomes:"Successful launch of JECD and SSDM products serving multiple U.S. military branches. Established a foundation of direct user partnership that drove adoption and shaped subsequent feature development.",
+      hard:"Reconciling meaningfully different requirements across service branches while maintaining a coherent, maintainable product. The political and organizational dynamics of multi-branch programs required as much navigation as the product design itself."
+    }
+  ],
+
+  timeline:[
+    {
+      id:"t1",type:"dp",
+      company:"The Boeing Company",
+      role:"Product Manager",
+      period:"Apr 2023 – Present",
+      loc:"Pismo Beach, CA",
+      ip:"ip3",
+      ms:[
+        "Leads deliveries across a portfolio of logistics products for DoD, foreign gov, and commercial customers",
+        "Product Strategy Lead for TIE — AI-powered data analytics platform for USTRANSCOM",
+        "SDLC Lead for LogC2 licensed product transformation",
+        "Stanford University Product Management Program (2024)",
+        "Tapestry Outstanding Team Award (2025)"
+      ]
+    },
+    {
+      id:"t2",type:"dt",
+      company:"The Boeing Company",
+      role:"Software Test Lead",
+      period:"Feb 2014 – Apr 2023",
+      loc:"Pismo Beach, CA",
+      ip:"ip2",
+      ms:[
+        "Led QA teams for mission-critical military logistics products",
+        "PM for ICODES JECD & SSDM — new-to-market product launches",
+        "PM for ICODES Commercial serving Leidos / U.S. Antarctic Program",
+        "Lead author on DoD and international proposal efforts",
+        "Tapestry Outstanding Contributor Award: 2017, 2019, 2021"
+      ]
+    },
+    {
+      id:"t3",type:"de",
+      company:"Masashi D&C",
+      role:"Small Business Owner & Design Consultant",
+      period:"2011 – 2017",
+      loc:"SLO, CA",
+      ip:"ip1",
+      ms:[
+        "Enabled entrepreneurs to bring ideas to life through collaborative design and prototyping",
+        "Led product strategy and client delivery as owner-operator"
+      ]
+    },
+    {
+      id:"t4",type:"de",
+      company:"Rauch Engineering",
+      role:"Design & Manufacturing Engineer",
+      period:"May 2013 – Jan 2014",
+      loc:"SLO, CA",
+      ip:null,
+      ms:[
+        "Designed mechanical and electromechanical systems using solid modeling tools",
+        "Contributed to product development and prototyping"
+      ]
+    }
+  ],
+
+  inflectionPoints:[
+    {
+      id:"ip1",period:"2011–2013",
+      title:"Engineer → Product Thinker",
+      ctx:"While studying Industrial Technology at Cal Poly SLO and running Masashi D&C, I discovered that the most interesting design problems were never purely technical — they were about understanding what people actually needed. Design consulting gave me my first real taste of user-centered product thinking.",
+      why:"This is where the seed of product instinct was planted. Working directly with entrepreneurs to shape ideas into real products taught me that empathy and clarity of purpose matter more than technical sophistication."
+    },
+    {
+      id:"ip2",period:"2017–2022",
+      title:"Test Lead → Product Owner",
+      ctx:"After years leading QA for Boeing's logistics products, I began taking on product ownership — leading the ICODES launches with direct user collaboration across military service branches. The transition wasn't a title change; it was a mindset shift from 'does this work?' to 'does this solve the right problem?'",
+      why:"This stretch sharpened my conviction that deep domain knowledge and user empathy are the real differentiators in government product work. The certifications I pursued — UX, business analysis, Agile PM, predictive modeling — were deliberate investments in becoming a complete product thinker."
+    },
+    {
+      id:"ip3",period:"2023",
+      title:"Taking Ownership of AI Product Strategy",
+      ctx:"Moving into the Product Manager role at Boeing coincided with the organization leaning into AI-powered logistics capabilities. Taking ownership of TIE — an LLM-integrated analytics platform for USTRANSCOM — was the first time I was fully responsible for both defining what AI should do and ensuring operators would trust it.",
+      why:"This crystallized a philosophy I now carry into every AI initiative: the hardest problem isn't building the model — it's designing for trust. That reframe is what distinguishes good AI product work from impressive demos that never get used."
+    }
+  ],
+
+  skills:{
+    product:[
+      {n:"Product Strategy & Roadmapping",s:"cs1"},
+      {n:"0→1 Product Development",s:"cs3"},
+      {n:"AI / LLM Product Design",s:"cs1"},
+      {n:"User Research & Discovery",s:"cs3"},
+      {n:"Design Thinking",s:null},
+      {n:"Innovation Facilitation",s:null}
+    ],
+    technical:[
+      {n:"Systems Thinking",s:"cs1"},
+      {n:"Data Analytics",s:"cs1"},
+      {n:"SDLC Transformation",s:"cs2"},
+      {n:"Agile / SAFe Delivery",s:null},
+      {n:"JIRA & Product Tooling",s:null},
+      {n:"Engineering & Solid Modeling Background",s:null}
+    ],
+    leadership:[
+      {n:"Cross-functional Team Leadership",s:null},
+      {n:"Stakeholder Alignment (Govt / DoD)",s:"cs1"},
+      {n:"Proposal Writing & RFP Analysis",s:null},
+      {n:"Org Development & Strategic Initiatives",s:null},
+      {n:"Recruitment & Team Building",s:null}
+    ]
+  },
+
+  principles:[
+    {t:"Design for trust, not just accuracy.",b:"In AI and government products, a technically excellent solution that operators don't trust is worthless. I orient every AI initiative around adoption and confidence — not just model performance."},
+    {t:"Systems thinking before solution jumping.",b:"Complex logistics and defense problems are almost always symptoms of larger systemic dynamics. I invest heavily in mapping the full system — people, incentives, data flows, constraints — before committing to a direction."},
+    {t:"Customer empathy is the sharpest competitive edge.",b:"In government and defense product work, the teams that win long-term are the ones who do the hard work of understanding real user workflows. I build direct user relationships as a structural part of my product process."},
+    {t:"Continuous improvement is a product value, not just a process value.",b:"I apply the same iteration mindset to how teams work as to the products they build. SDLC health is a product problem — it directly determines what you can ship and how fast you can learn."},
+    {t:"Strategic vision needs operational clarity to become real.",b:"Strong strategies dissolve in execution when no one translates them into concrete, sequenced decisions. I hold both ends: the long arc and the next step."}
+  ],
+
+  background:{
+    education:[
+      {deg:"B.S. Industrial Technology",inst:"California Polytechnic State University, San Luis Obispo",yr:"2013"}
+    ],
+    certs:[
+      {n:"Stanford University Product Management Program",yr:"2024"},
+      {n:"Google Project Management Professional Certificate",yr:"2022"},
+      {n:"SAFe Agile Product Owner/Product Manager – St. Louis University",yr:"2022"},
+      {n:"Udacity Business Analyst Nanodegree",yr:"2021"},
+      {n:"Stanford University Design Research Course",yr:"2020"},
+      {n:"ISTQB Agile Tester Certification",yr:"2019"},
+      {n:"IQBBA Business Analyst Certification",yr:"2019"},
+      {n:"Stanford University Predictive Modeling Course",yr:"2018"},
+      {n:"General Assembly UX Design Certificate",yr:"2017"},
+      {n:"ISTQB Foundation Certification",yr:"2017"}
+    ],
+    awards:[
+      {n:"Tapestry Outstanding Team Award",ctx:"Boeing logistics program",yr:"2025"},
+      {n:"Tapestry Outstanding Contributor Award",ctx:"Third recognition — Boeing",yr:"2021"},
+      {n:"Tapestry Outstanding Contributor Award",ctx:"Second recognition — Boeing",yr:"2019"},
+      {n:"Tapestry Outstanding Contributor Award",ctx:"First recognition — Boeing",yr:"2017"}
+    ]
+  },
+
+  contact:{
+    email:"bradkunisaki@gmail.com",
+    linkedin:"linkedin.com/in/bkunisaki",
+    lookingFor:[
+      "AI product leadership in complex, high-stakes domains",
+      "Defense, government, or logistics product roles",
+      "0→1 product strategy with mission-driven organizations",
+      "Environments that value systems thinking and deep user empathy"
+    ],
+    note:"I'm at my best on problems that are technically complex, organizationally messy, and genuinely important — the kind where you have to earn the trust of both the customer and the product before anything else works. If that's the kind of work you're building toward, I'd like to talk."
+  }
+};
+
+// ═══════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════
+let currentTab = 'work';
+let openCS = { cs1:true, cs2:false, cs3:false };
+let openTL = {};
+let activeSkillStudy = null;
+
+// ═══════════════════════════════════════
+// UTILITIES
+// ═══════════════════════════════════════
+function getIPMap() {
+  const m = {};
+  DATA.inflectionPoints.forEach(ip => { m[ip.id] = ip; });
+  return m;
+}
+
+window.scrollToEl = function(id) {
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior:'smooth', block:'center' });
+};
+
+window.toggleTL = function(id) {
+  openTL[id] = !openTL[id];
+  const card = document.getElementById('tlcard-' + id);
+  if (!card) return;
+  const chevron = card.querySelector('.tl-chevron');
+  const existing = document.getElementById('tldetail-' + id);
+  const item = DATA.timeline.find(t => t.id === id);
+  if (!item) return;
+  const ip = item.ip ? getIPMap()[item.ip] : null;
+  if (openTL[id]) {
+    if (chevron) chevron.classList.add('open');
+    if (!existing) {
+      const det = document.createElement('div');
+      det.className = 'tl-detail';
+      det.id = 'tldetail-' + id;
+      det.innerHTML =
+        '<ul class="tl-ms">' + item.ms.map(m => '<li>' + m + '</li>').join('') + '</ul>' +
+        (ip ? '<button class="tl-ip-btn" onclick="scrollToEl(\'ip-' + ip.id + '\')">✦ ' + ip.title + '</button>' : '');
+      card.appendChild(det);
+    }
+  } else {
+    if (chevron) chevron.classList.remove('open');
+    if (existing) existing.remove();
+  }
+};
+
+window.toggleCS = function(id) {
+  openCS[id] = !openCS[id];
+  const cs = DATA.caseStudies.find(c => c.id === id);
+  if (!cs) return;
+  const card = document.getElementById('cs-' + id);
+  if (!card) return;
+  const icon = card.querySelector('.cs-icon');
+  const existing = card.querySelector('.cs-body');
+  if (openCS[id]) {
+    if (icon) icon.classList.add('open');
+    if (!existing) {
+      const body = document.createElement('div');
+      body.className = 'cs-body';
+      body.innerHTML =
+        '<div class="cs-sec"><div class="cs-lbl">Problem</div><div class="cs-txt">' + cs.problem + '</div></div>' +
+        '<div class="cs-sec"><div class="cs-lbl">Approach</div><div class="cs-txt">' + cs.approach + '</div></div>' +
+        '<div class="cs-sec"><div class="cs-lbl">Key Contributions</div><ul class="cs-ul">' +
+          cs.contributions.map(c => '<li>' + c + '</li>').join('') + '</ul></div>' +
+        '<div class="cs-sec"><div class="cs-lbl">Outcomes</div><div class="cs-txt">' + cs.outcomes + '</div></div>' +
+        '<div class="cs-sec"><div class="cs-lbl">What Was Hard</div><div class="cs-hard">' + cs.hard + '</div></div>';
+      card.appendChild(body);
+    }
+  } else {
+    if (icon) icon.classList.remove('open');
+    if (existing) existing.remove();
+  }
+};
+
+window.showSkillStudy = function(id) {
+  activeSkillStudy = id;
+  showTab('skills');
+  setTimeout(() => {
+    const el = document.getElementById('related-cs-section');
+    if (el) el.scrollIntoView({ behavior:'smooth', block:'start' });
+  }, 60);
+};
+
+window.dismissSkillStudy = function() {
+  activeSkillStudy = null;
+  showTab('skills');
+};
+
+// ═══════════════════════════════════════
+// SCREEN BUILDERS
+// ═══════════════════════════════════════
+function buildTimeline() {
+  const ips = getIPMap();
+  const badgeLabel = { dp:'Product', dt:'Test Lead', de:'Engineering / Design' };
+  const legend = `<div class="tl-legend">
+    <div class="tl-legend-item"><div class="tl-legend-dot" style="background:var(--navy)"></div>Product</div>
+    <div class="tl-legend-item"><div class="tl-legend-dot" style="background:var(--navy-bright)"></div>Test Lead</div>
+    <div class="tl-legend-item"><div class="tl-legend-dot" style="background:var(--tx3)"></div>Engineering / Design</div>
+  </div>`;
+  const items = DATA.timeline.map(item => {
+    const isOpen = !!openTL[item.id];
+    const ip = item.ip ? ips[item.ip] : null;
+    return `<div class="tl-item">
+      <div class="tl-dot-col"><div class="tl-dot ${item.type}" title="${item.role}" onclick="toggleTL('${item.id}')"></div></div>
+      <div class="tl-card" id="tlcard-${item.id}">
+        <div class="tl-summary" onclick="toggleTL('${item.id}')">
+          <div class="tl-left">
+            <div class="tl-role">${item.role}</div>
+            <div class="tl-meta"><span class="tl-co">${item.company}</span><span>${item.period}</span><span>${item.loc}</span></div>
+          </div>
+          <div class="tl-right">
+            <span class="tl-badge ${item.type}">${badgeLabel[item.type]}</span>
+            <span class="tl-chevron${isOpen?' open':''}">▾</span>
+          </div>
+        </div>
+        ${isOpen ? `<div class="tl-detail" id="tldetail-${item.id}">
+          <ul class="tl-ms">${item.ms.map(m => '<li>'+m+'</li>').join('')}</ul>
+          ${ip ? `<button class="tl-ip-btn" onclick="scrollToEl('ip-${ip.id}')">✦ ${ip.title}</button>` : ''}
+        </div>` : ''}
+      </div>
+    </div>`;
+  }).join('');
+  return `<div class="tl-outer">${legend}<div class="tl-spine"></div>${items}</div>`;
+}
+
+function buildCaseStudyCard(cs, forceOpen) {
+  const isOpen = forceOpen !== undefined ? forceOpen : !!openCS[cs.id];
+  return `<div class="cs-card" id="cs-${cs.id}">
+    <div class="cs-hd" onclick="toggleCS('${cs.id}')">
+      <div>
+        <div class="cs-meta"><span class="cs-tag">${cs.tag}</span><span class="cs-co">${cs.company} · ${cs.period}</span></div>
+        <div class="cs-title">${cs.title}</div>
+      </div>
+      <div class="cs-right">
+        <div class="cs-stat"><div class="cs-sv">${cs.stat.v}</div><div class="cs-sl">${cs.stat.l}</div></div>
+        <span class="cs-icon${isOpen?' open':''}">▾</span>
+      </div>
+    </div>
+    ${isOpen ? `<div class="cs-body">
+      <div class="cs-sec"><div class="cs-lbl">Problem</div><div class="cs-txt">${cs.problem}</div></div>
+      <div class="cs-sec"><div class="cs-lbl">Approach</div><div class="cs-txt">${cs.approach}</div></div>
+      <div class="cs-sec"><div class="cs-lbl">Key Contributions</div><ul class="cs-ul">${cs.contributions.map(c=>'<li>'+c+'</li>').join('')}</ul></div>
+      <div class="cs-sec"><div class="cs-lbl">Outcomes</div><div class="cs-txt">${cs.outcomes}</div></div>
+      <div class="cs-sec"><div class="cs-lbl">What Was Hard</div><div class="cs-hard">${cs.hard}</div></div>
+    </div>` : ''}
+  </div>`;
+}
+
+function buildInflectionPoints() {
+  return `<div class="ip-grid">${DATA.inflectionPoints.map(ip => `
+    <div class="ip-card" id="ip-${ip.id}">
+      <div class="ip-yr">${ip.period}</div>
+      <div class="ip-title">${ip.title}</div>
+      <div class="ip-ctx">${ip.ctx}</div>
+      <div class="ip-why"><strong>Why It Mattered</strong>${ip.why}</div>
+    </div>`).join('')}</div>`;
+}
+
+function buildSkillGroup(title, skills) {
+  return `<div>
+    <div class="sk-t">${title}</div>
+    <div class="sk-list">${skills.map(s => `
+      <div class="sk-item"><span>${s.n}</span>
+        ${s.s ? `<button class="sk-lnk" onclick="showSkillStudy('${s.s}')">case study →</button>` : ''}
+      </div>`).join('')}
+    </div>
+  </div>`;
+}
+
+// ═══════════════════════════════════════
+// SCREEN TAB RENDERERS
+// ═══════════════════════════════════════
+function renderWork() {
+  return `<div class="panel">
+    <div class="hero">
+      <div class="hero-ey">${DATA.meta.eyebrow}</div>
+      <div class="hero-name">${DATA.meta.name}</div>
+      <div class="hero-tag">${DATA.meta.tagline}</div>
+    </div>
+    <div class="section"><div class="sl">Career Timeline</div>${buildTimeline()}</div>
+    <div class="section"><div class="sl">Inflection Points</div>${buildInflectionPoints()}</div>
+    <div class="section"><div class="sl">Selected Case Studies</div>
+      <div class="cs-grid">${DATA.caseStudies.map(cs => buildCaseStudyCard(cs)).join('')}</div>
+    </div>
+  </div>`;
+}
+
+function renderSkills() {
+  const relatedCS = activeSkillStudy ? DATA.caseStudies.find(c => c.id === activeSkillStudy) : null;
+  return `<div class="panel">
+    <div class="section"><div class="sl">Skills</div>
+      <div class="sk-layout">
+        ${buildSkillGroup('Product', DATA.skills.product)}
+        ${buildSkillGroup('Technical', DATA.skills.technical)}
+        ${buildSkillGroup('Leadership', DATA.skills.leadership)}
+      </div>
+    </div>
+    ${relatedCS ? `<div class="related-cs" id="related-cs-section">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:22px">
+        <span class="sl" style="margin-bottom:0;flex:1">Related Case Study</span>
+        <button class="dismiss-btn" onclick="dismissSkillStudy()">✕ dismiss</button>
+      </div>
+      <div class="cs-grid">${buildCaseStudyCard(relatedCS, true)}</div>
+    </div>` : ''}
+    <div class="section"><div class="sl">How I Think</div>
+      <div class="pr-list">${DATA.principles.map((p,i) => `
+        <div class="pr-item">
+          <div><div class="pr-title">${p.t}</div><div class="pr-body">${p.b}</div></div>
+          <div class="pr-num">0${i+1}</div>
+        </div>`).join('')}
+      </div>
+    </div>
+  </div>`;
+}
+
+function renderBackground() {
+  return `<div class="panel">
+    <div class="bg-sec"><div class="bg-t">Education</div>
+      ${DATA.background.education.map(e => `<div class="bg-item">
+        <div class="bg-item-text"><div class="bg-in">${e.deg}</div><div class="bg-sub">${e.inst}</div></div>
+        <div class="bg-yr">${e.yr}</div></div>`).join('')}
+    </div>
+    <div class="bg-sec"><div class="bg-t">Certifications</div>
+      ${DATA.background.certs.map(c => `<div class="bg-item">
+        <div class="bg-item-text"><div class="bg-in">${c.n}</div></div>
+        <div class="bg-yr">${c.yr}</div></div>`).join('')}
+    </div>
+    <div class="bg-sec"><div class="bg-t">Awards &amp; Recognition</div>
+      ${DATA.background.awards.map(a => `<div class="bg-item">
+        <div class="bg-item-text"><div class="bg-in">${a.n}</div><div class="bg-sub">${a.ctx}</div></div>
+        <div class="bg-yr">${a.yr}</div></div>`).join('')}
+    </div>
+  </div>`;
+}
+
+function renderContact() {
+  const c = DATA.contact;
+  return `<div class="panel">
+    <div class="ct-layout">
+      <div>
+        <div class="ct-card">
+          <div class="ct-hd">Get in touch</div>
+          <a class="ct-link" href="mailto:${c.email}"><span class="ct-icon">✉</span>${c.email}</a>
+          <a class="ct-link" href="https://${c.linkedin}" target="_blank" rel="noopener noreferrer"><span class="ct-icon">in</span>${c.linkedin}</a>
+        </div>
+        <div class="ct-note">${c.note}</div>
+      </div>
+      <div class="ct-card">
+        <div class="ct-hd">What I'm Looking For</div>
+        <ul class="lk-list">${c.lookingFor.map(l => '<li>'+l+'</li>').join('')}</ul>
+      </div>
+    </div>
+  </div>`;
+}
+
+// ═══════════════════════════════════════
+// PRINT RESUME BUILDER
+// ═══════════════════════════════════════
+function buildPrintResume() {
+  const c = DATA.contact;
+  const allSkills = {
+    Product: DATA.skills.product.map(s => s.n),
+    Technical: DATA.skills.technical.map(s => s.n),
+    Leadership: DATA.skills.leadership.map(s => s.n)
+  };
+
+  // Summary from meta tagline
+  const summary = DATA.meta.tagline + ' ' + DATA.meta.eyebrow.replace(' · ', ' and ') + '.';
+
+  // Experience entries
+  const expHTML = DATA.timeline.map(item => `
+    <div class="re">
+      <div class="re-hd">
+        <div class="re-role">${item.role}</div>
+        <div class="re-period">${item.period}</div>
+      </div>
+      <div class="re-co">${item.company} &nbsp;·&nbsp; ${item.loc}</div>
+      <ul class="re-ul">${item.ms.map(m => '<li>'+m+'</li>').join('')}</ul>
+    </div>`).join('');
+
+  // Skills columns
+  const skHTML = Object.entries(allSkills).map(([title, items]) => `
+    <div>
+      <div class="r-sk-col-title">${title}</div>
+      <ul class="r-sk-list">${items.map(n => '<li>'+n+'</li>').join('')}</ul>
+    </div>`).join('');
+
+  // Education + top certs split into two columns
+  const edu = DATA.background.education[0];
+  // Show top 6 certs on resume (space-constrained)
+  const topCerts = DATA.background.certs.slice(0, 6);
+  const awards = DATA.background.awards;
+
+  const today = new Date().toLocaleDateString('en-US', {month:'long', year:'numeric'});
+
+  return `
+    <div class="rh">
+      <div class="rh-name">${DATA.meta.name}</div>
+      <div class="rh-sub">${DATA.meta.eyebrow}</div>
+      <div class="rh-contact">
+        <span>✉ ${c.email}</span>
+        <span>in ${c.linkedin}</span>
+        <span>Pismo Beach, CA</span>
+      </div>
+    </div>
+
+    <div class="rs">Professional Summary</div>
+    <div class="r-summary">${DATA.meta.tagline} Specialties include AI/LLM product strategy, 0→1 development, SDLC transformation, and stakeholder alignment in defense and government environments.</div>
+
+    <div class="rs">Experience</div>
+    ${expHTML}
+
+    <div class="rs">Core Skills</div>
+    <div class="r-sk-grid">${skHTML}</div>
+
+    <div class="rs">Education &amp; Certifications</div>
+    <div class="r-edu-grid">
+      <div>
+        <div class="r-edu-item">
+          <div class="r-edu-deg">${edu.deg}</div>
+          <div class="r-edu-inst">${edu.inst}, ${edu.yr}</div>
+        </div>
+        <div style="margin-top:8pt;font-size:7.5pt;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#1B3461;margin-bottom:4pt;">Awards</div>
+        ${awards.map(a => `<div class="r-award-item"><span class="r-award-name">${a.n}</span><span class="r-award-meta">${a.yr}</span></div>`).join('')}
+      </div>
+      <div>
+        <div style="font-size:7.5pt;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#1B3461;margin-bottom:4pt;">Selected Certifications</div>
+        ${topCerts.map(c => `<div class="r-cert-item"><span class="r-cert-name">${c.n}</span><span class="r-cert-yr">${c.yr}</span></div>`).join('')}
+      </div>
+    </div>
+
+    <div class="r-footer">
+      <span>bradkunisaki@gmail.com &nbsp;·&nbsp; linkedin.com/in/bkunisaki</span>
+      <span>Updated ${today}</span>
+    </div>`;
+}
+
+// ═══════════════════════════════════════
+// PRINT TRIGGER
+// ═══════════════════════════════════════
+window.triggerPrint = function() {
+  document.getElementById('print-resume').innerHTML = buildPrintResume();
+  window.print();
+};
+
+// ═══════════════════════════════════════
+// ROUTING
+// ═══════════════════════════════════════
+const renderers = { work:renderWork, skills:renderSkills, background:renderBackground, contact:renderContact };
+
+function showTab(tab) {
+  currentTab = tab;
+  document.querySelectorAll('.tb').forEach(b => b.classList.toggle('on', b.dataset.tab === tab));
+  document.getElementById('main').innerHTML = renderers[tab]();
+  window.scrollTo({ top:0, behavior:'smooth' });
+}
+
+document.getElementById('tabs').addEventListener('click', e => {
+  const btn = e.target.closest('.tb');
+  if (btn && btn.dataset.tab) {
+    if (btn.dataset.tab !== 'skills') activeSkillStudy = null;
+    showTab(btn.dataset.tab);
+  }
+});
+
+document.getElementById('brand-logo').addEventListener('click', () => {
+  activeSkillStudy = null;
+  showTab('work');
+});
+
+// Initial render
+showTab('work');
+</script>
+</body>
+</html>

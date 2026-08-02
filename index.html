@@ -3,18 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Brad Kunisaki — Product Leader</title>
+<title>Brad Kunisaki | Product Leader</title>
 <meta name="description" content="Product Leader with 12+ years building software and AI products for logistics and government customers, with a human-centered approach to design and delivery.">
 
 <!-- ── Open Graph ── -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Brad Kunisaki — Product Leader">
-<meta property="og:description" content="Product Leader · AI Builder · Systems Thinker. 12+ years building software and AI products for logistics and government customers, with a human-centered approach to design and delivery.">
-<meta property="og:url" content="https://bradkunisaki.com">
-<meta property="og:image" content="https://bradkunisaki.com/og-image.png">
+<meta property="og:site_name" content="Brad Kunisaki">
+<meta property="og:title" content="Brad Kunisaki | Product Leader">
+<meta property="og:description" content="Product Leader · Systems Thinker · AI Fluent. 12+ years building software and AI products for logistics and government customers, with a human-centered approach to design and delivery.">
+<meta property="og:url" content="https://projectkuma-dev.github.io/bk-portfolio/">
+<meta property="og:image" content="https://projectkuma-dev.github.io/bk-portfolio/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Brad Kunisaki: Product Leader, Systems Thinker, AI Fluent">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Brad Kunisaki — Product Leader">
-<meta name="twitter:description" content="Product Leader · AI Builder · Systems Thinker. 12+ years building software and AI products for logistics and government customers, with a human-centered approach to design and delivery.">
+<meta name="twitter:title" content="Brad Kunisaki | Product Leader">
+<meta name="twitter:description" content="Product Leader · Systems Thinker · AI Fluent. 12+ years building software and AI products for logistics and government customers, with a human-centered approach to design and delivery.">
+<meta name="twitter:image" content="https://projectkuma-dev.github.io/bk-portfolio/og-image.png">
+<link rel="canonical" href="https://projectkuma-dev.github.io/bk-portfolio/">
 
 <!-- ── Favicon (inline SVG → data URI, no external file needed) ── -->
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231B3461'/%3E%3Ctext x='16' y='22' font-family='Georgia%2Cserif' font-size='14' font-weight='700' fill='white' text-anchor='middle' letter-spacing='0.5'%3EBK%3C/text%3E%3C/svg%3E">
@@ -67,7 +73,7 @@ body{background:var(--bg);color:var(--tx);font-family:var(--fb);font-size:15px;l
 .tb.on{color:var(--navy);background:var(--navy-light);font-weight:600}
 .tb.on::after{content:'';position:absolute;bottom:-1px;left:14px;right:14px;height:2px;background:var(--navy);border-radius:2px 2px 0 0}
 
-/* Print Resume button — visually separate from tabs */
+/* Print Resume button (visually separate from tabs) */
 .hd-divider{width:1px;height:22px;background:var(--border);margin:0 4px;flex-shrink:0}
 .print-btn{display:flex;align-items:center;gap:6px;background:none;border:1px solid var(--border);cursor:pointer;font-family:var(--fb);font-size:12.5px;font-weight:500;color:var(--tx2);padding:5px 12px;border-radius:var(--r);transition:color var(--ease),background var(--ease),border-color var(--ease);white-space:nowrap;letter-spacing:.01em}
 .print-btn:hover{color:var(--navy);background:var(--navy-light);border-color:var(--navy-dim)}
@@ -124,7 +130,7 @@ body{background:var(--bg);color:var(--tx);font-family:var(--fb);font-size:15px;l
 .tl-legend-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
 
 /* ── Inflection Points ── */
-.ip-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(262px,1fr));gap:14px}
+.ip-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
 .ip-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);padding:22px;position:relative;overflow:hidden;transition:box-shadow var(--ease);box-shadow:var(--sh)}
 .ip-card:hover{box-shadow:var(--sh-md)}
 .ip-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--navy),var(--navy-bright))}
@@ -202,6 +208,7 @@ body{background:var(--bg);color:var(--tx);font-family:var(--fb);font-size:15px;l
 .lk-list{list-style:none;display:flex;flex-direction:column;gap:8px}
 .lk-list li{font-size:13.5px;color:var(--tx2);padding-left:16px;position:relative;line-height:1.5}
 .lk-list li::before{content:'→';position:absolute;left:0;color:var(--navy);font-size:12px;top:3px}
+.lk-one{font-size:15px;color:var(--tx2);line-height:1.7}
 .ct-note{background:var(--navy-light);border-left:3px solid var(--navy);border-radius:0 var(--r) var(--r) 0;padding:18px 22px;font-size:14px;line-height:1.75;color:var(--tx2);font-style:italic;margin-top:22px}
 
 /* ── Mobile ── */
@@ -233,7 +240,7 @@ body{background:var(--bg);color:var(--tx);font-family:var(--fb);font-size:15px;l
 }
 
 /* ════════════════════════════════════════
-   PRINT STYLES  — resume layout
+   PRINT STYLES: resume layout
    Activated by window.print() only.
    The #print-resume element is built
    dynamically in JS and hidden on screen.
@@ -496,8 +503,8 @@ body{background:var(--bg);color:var(--tx);font-family:var(--fb);font-size:15px;l
 const DATA = {
   meta:{
     name:"Brad Kunisaki",
-    eyebrow:"Product Leader · AI Builder · Systems Thinker",
-    tagline:"12+ years building software and AI products for logistics and government customers — with a human-centered approach to design and delivery."
+    eyebrow:"Product Leader · Systems Thinker · AI Fluent",
+    tagline:"12+ years building software and AI products for logistics and government customers, with a human-centered approach to design and delivery."
   },
 
   caseStudies:[
@@ -508,17 +515,17 @@ const DATA = {
       company:"The Boeing Company",
       period:"2023–Present",
       stat:{v:"AI+",l:"LLM-powered data analytics platform for transportation logistics"},
-      problem:"USTRANSCOM needed a modern logistics intelligence platform that could surface actionable insights from massive, complex datasets. Traditional analytics tools were insufficient — operators lacked real-time feedback loops and the visualizations required to make fast, confident decisions.",
-      approach:"I led product strategy and design for TIE from the ground up, combining large language models with traditional analytics engines and historical transportation data. I facilitated prototype reviews with government stakeholders, drove roadmap prioritization, and maintained team alignment across a complex multi-stakeholder environment. The goal was always to make AI outputs operator-friendly, not just technically impressive.",
+      problem:"USTRANSCOM needed a logistics intelligence platform that could pull usable answers out of datasets too large and too fragmented to work through by hand. Traditional analytics tools were insufficient. Operators lacked real-time feedback loops and the visualizations required to make fast, confident decisions.",
+      approach:"I led product strategy and design for TIE from its first prototype, combining large language models with traditional analytics engines and historical transportation data. I ran prototype reviews with government stakeholders, set roadmap priorities, and kept the team aligned across a lot of competing interests. The goal throughout was to make the output something an operator could act on under time pressure.",
       contributions:[
         "Led design and roadmap development for the full AI-powered logistics application",
         "Combined LLMs with traditional analytics to create intelligent feedback loops",
         "Designed user-friendly visualizations tailored to operator decision-making workflows",
-        "Facilitated prototype reviews and stakeholder alignment sessions with USTRANSCOM",
-        "Program success resulted in significant additional funding and program growth"
+        "Ran prototype reviews directly with USTRANSCOM stakeholders",
+        "Defined how the system explains its reasoning so operators could verify output before acting on it"
       ],
-      outcomes:"Project success drove significant program growth through additional funding. Delivered an AI-powered platform that translated complex logistics data into actionable operator intelligence — demonstrating the value of combining LLM capabilities with domain-specific analytics in a defense context.",
-      hard:"Bridging the gap between what AI could do and what government operators would actually trust and use. Designing for adoption in a high-stakes, low-tolerance-for-error environment required constant calibration between technical capability and user confidence."
+      outcomes:"TIE's results contributed to follow-on funding for the program. The platform turned logistics data that operators previously had to interpret by hand into recommendations they could act on directly.",
+      hard:"Operators had good reason to distrust AI output, and in this environment a wrong answer costs more than no answer. Most of the design work went into showing how the system reached a conclusion, so an operator could check it before acting on it."
     },
     {
       id:"cs2",
@@ -527,34 +534,34 @@ const DATA = {
       company:"The Boeing Company",
       period:"2023–Present",
       stat:{v:"End-to-end",l:"SDLC transformation across a licensed product suite"},
-      problem:"A suite of licensed logistics products had accumulated technical debt, inconsistent delivery practices, and pain points across the full software development lifecycle — from planning through deployment. The program needed a structured transformation to restore delivery velocity and product quality.",
-      approach:"I spearheaded the transformation by first conducting a systematic assessment of pain points across the SDLC. I then collaborated with cross-functional teams to design and implement targeted improvements at each stage — planning, development, testing, and deployment. Stakeholder alignment was central throughout.",
+      problem:"A suite of licensed logistics products had accumulated technical debt, inconsistent delivery practices, and pain points across the full software development lifecycle, from planning through deployment. The program needed a structured transformation to restore delivery velocity and product quality.",
+      approach:"I started with an assessment of where the lifecycle actually broke down rather than where people assumed it did. From there I worked with the delivery teams to fix the stages costing the most time, in the order they were costing it.",
       contributions:[
         "Led full SDLC assessment and pain point analysis across the product suite",
         "Designed and implemented process improvements from planning through deployment",
         "Collaborated cross-functionally to optimize products and ensure program success",
         "Served as both Product Lead and SDLC Lead, maintaining strategic and delivery accountability"
       ],
-      outcomes:"Successfully transformed the delivery lifecycle for a critical licensed product suite. Improved product quality, delivery consistency, and team confidence across the program. Established repeatable practices that strengthened the program's long-term health.",
-      hard:"Driving process change in a program with established habits and high delivery pressure. Getting buy-in required demonstrating quick wins while maintaining momentum on long-term structural improvements."
+      outcomes:"The suite now ships on a predictable cadence, and the practices we put in place have held up through turnover on the team.",
+      hard:"Nobody wants to change how they work while they are behind on delivery. I had to find fixes small enough to land inside a single sprint, then use the credit from those to buy room for the slower structural work."
     },
     {
       id:"cs3",
       tag:"0→1 · Government",
-      title:"ICODES JECD &amp; SSDM — Product Launches",
+      title:"ICODES JECD &amp; SSDM Product Launches",
       company:"The Boeing Company",
       period:"2014–2023",
       stat:{v:"New-to-Market",l:"Multi-branch military products serving joint warfighter needs"},
       problem:"The U.S. military needed a new unit move system that had never existed in the market before. Multiple service branches had distinct operational use cases and user archetypes that needed to be understood, reconciled, and designed for in a single coherent product.",
-      approach:"I collaborated directly with primary user representatives across multiple service branches to map use cases and develop detailed user archetypes. I led requirements elicitation from the ground up and drove the design of a new-to-market system. After a successful initial launch, I oversaw subsequent releases to extend capability and address evolved user needs.",
+      approach:"I collaborated directly with primary user representatives across multiple service branches to map use cases and develop detailed user archetypes. I led requirements elicitation from scratch and drove the design of a system with no existing equivalent. After a successful initial launch, I oversaw subsequent releases to extend capability and address evolved user needs.",
       contributions:[
         "Embedded with primary user reps across service branches to surface real operational workflows",
         "Led requirements elicitation and user archetype development for a novel warfighter capability",
         "Drove design of a new-to-market unit move system from zero",
         "Managed successful initial launch and oversaw subsequent release cycles"
       ],
-      outcomes:"Successful launch of JECD and SSDM products serving multiple U.S. military branches. Established a foundation of direct user partnership that drove adoption and shaped subsequent feature development.",
-      hard:"Reconciling meaningfully different requirements across service branches while maintaining a coherent, maintainable product. The political and organizational dynamics of multi-branch programs required as much navigation as the product design itself."
+      outcomes:"JECD and SSDM launched and are in use across multiple U.S. military branches. The user relationships built during requirements work carried into later releases, which is where most of the feature direction came from.",
+      hard:"Each branch had a different idea of what the system was for, and each was right about its own operation. Keeping one product coherent meant telling some users no and explaining the reasoning well enough that they stayed engaged anyway."
     }
   ],
 
@@ -568,7 +575,9 @@ const DATA = {
       ip:"ip3",
       ms:[
         "Leads deliveries across a portfolio of logistics products for DoD, foreign gov, and commercial customers",
-        "Product Strategy Lead for TIE — AI-powered data analytics platform for USTRANSCOM",
+        "Led key growth initiatives expanding the portfolio to new US defense and international customers, contributing to roughly 90% portfolio growth from 2025 to 2027 (2027 projected)",
+        "Partnered with program managers to staff up for new work, then directed delivery operations and process improvement as the team scaled",
+        "Product Strategy Lead for TIE, an AI-powered data analytics platform for USTRANSCOM",
         "SDLC Lead for LogC2 licensed product transformation",
         "Stanford University Product Management Program (2024)",
         "Tapestry Outstanding Team Award (2025)"
@@ -583,7 +592,7 @@ const DATA = {
       ip:"ip2",
       ms:[
         "Led QA teams for mission-critical military logistics products",
-        "PM for ICODES JECD & SSDM — new-to-market product launches",
+        "PM for ICODES JECD and SSDM, new-to-market product launches",
         "PM for ICODES Commercial serving Leidos / U.S. Antarctic Program",
         "Lead author on DoD and international proposal efforts",
         "Tapestry Outstanding Contributor Award: 2017, 2019, 2021"
@@ -619,20 +628,26 @@ const DATA = {
     {
       id:"ip1",period:"2011–2013",
       title:"Designer → Product Thinker",
-      ctx:"While studying Industrial Technology at Cal Poly SLO and running Masashi D&C, I discovered that the most interesting design problems were never purely technical — they were about understanding what people actually needed. Design consulting gave me my first real taste of user-centered product thinking.",
-      why:"This is where the seed of product instinct was planted. Working directly with entrepreneurs to shape ideas into real products taught me that empathy and clarity of purpose matter more than technical sophistication."
+      ctx:"While studying Industrial Technology at Cal Poly SLO and running Masashi D&C, I discovered that the most interesting design problems were never purely technical. They were about understanding what people actually needed. Design consulting gave me my first real taste of user-centered product thinking.",
+      why:"Working directly with entrepreneurs to turn ideas into products taught me that understanding the problem clearly mattered more than the sophistication of the solution. That has held up for the twelve years since."
     },
     {
       id:"ip2",period:"2017–2022",
       title:"Test Lead → Product Owner",
-      ctx:"After years leading QA for Boeing's logistics products, I began taking on product ownership — leading the ICODES launches with direct user collaboration across military service branches. The transition wasn't a title change; it was a mindset shift from 'does this work?' to 'does this solve the right problem?'",
-      why:"This stretch sharpened my conviction that deep domain knowledge and user empathy are the real differentiators in government product work. The certifications I pursued — UX, business analysis, Agile PM, predictive modeling — were deliberate investments in becoming a complete product thinker."
+      ctx:"After years leading QA for Boeing's logistics products, I began taking on product ownership, leading the ICODES launches with direct user collaboration across military service branches. The title changed later than the work did. I was already asking whether we were solving the right problem before anyone called me a product owner.",
+      why:"It also convinced me that in government product work, domain knowledge and direct user contact matter more than process credentials. I went after the UX, business analysis, Agile PM, and predictive modeling certifications anyway, mostly to close gaps I could feel."
     },
     {
-      id:"ip3",period:"2023–2026",
-      title:"Building an AI Product Practice — From Strategy to Method",
-      ctx:"What started in 2023 as owning AI product strategy at Boeing — taking TIE from concept to a working LLM-integrated analytics platform for USTRANSCOM — has evolved into a deliberate, ongoing investment in how to do AI product work well. IDEO U's AI x Design Thinking certificate and Prototyping with AI course formalized what I had been learning by doing: how to bring human-centered design methods into every phase of an AI initiative, from research synthesis to rapid prototyping.",
-      why:"This period crystallized two things I now treat as foundational: that AI products live or die on operator trust, and that design thinking is the most underused tool in the AI PM's toolkit. The IDEO training gave me a shared language and method for something I had already believed — that the gap between a useful AI product and an impressive demo is almost always a human-centered design problem."
+      id:"ip3",period:"2023–Present",
+      title:"Building an AI Product Practice: From Strategy to Method",
+      ctx:"What started in 2023 as owning AI product strategy at Boeing, taking TIE from concept to a working LLM-integrated analytics platform for USTRANSCOM, has evolved into a deliberate, ongoing investment in how to do AI product work well. IDEO U's AI x Design Thinking certificate and Prototyping with AI course formalized what I had been learning by doing: how to bring human-centered design methods into every phase of an AI initiative, from research synthesis to rapid prototyping.",
+      why:"Two things settled for me in this period. AI products fail on trust more often than on accuracy, and design methods are the first thing teams drop when an AI project gets tight. The IDEO training mostly gave me vocabulary and structure for work I had been doing by instinct."
+    },
+    {
+      id:"ip4",period:"2025–Present",
+      title:"Grew 90%, Then Scaled to Deliver",
+      ctx:"ICODES was already a multi-product portfolio, so the growth in this period came from expanding it to customers it had not served before, across US defense and international programs. I led several of the key growth initiatives. Between 2025 and 2027 the portfolio grew roughly 90%, with the 2027 figure projected. I then worked with the program managers to staff up for the new work and directed delivery operations as the team grew, improving process while staying in direct contact with the customers at each step.",
+      why:"Winning new work and being able to deliver it are different problems. Adding customers meant bringing on people faster than the existing process could absorb them, so hiring, process improvement, and delivery all had to move at once. I kept direct customer contact through the whole scale-up rather than handing it off as the team grew, which is the part I would do the same way again."
     }
   ],
 
@@ -664,11 +679,11 @@ const DATA = {
   },
 
   principles:[
-    {t:"Design for trust, not just accuracy.",b:"In AI and government products, a technically excellent solution that operators don't trust is worthless. I orient every AI initiative around adoption and confidence — not just model performance."},
-    {t:"Systems thinking before solution jumping.",b:"Complex logistics and defense problems are almost always symptoms of larger systemic dynamics. I invest heavily in mapping the full system — people, incentives, data flows, constraints — before committing to a direction."},
-    {t:"Customer empathy is the sharpest competitive edge.",b:"The IDEO design thinking tradition gets this right: the teams that win long-term are the ones who do the hard work of understanding real user workflows before reaching for solutions. I build direct user relationships as a structural part of my product process — not a phase you complete and move on from."},
-    {t:"Continuous improvement is a product value, not just a process value.",b:"I apply the same iteration mindset to how teams work as to the products they build. SDLC health is a product problem — it directly determines what you can ship and how fast you can learn."},
-    {t:"Strategic vision needs operational clarity to become real.",b:"Strong strategies dissolve in execution when no one translates them into concrete, sequenced decisions. I hold both ends: the long arc and the next step."}
+    {t:"Operator trust is the product.",b:"A model that scores well and gets ignored has produced nothing. I judge AI work by whether operators act on the output, and I would rather ship a narrower system people rely on than a broader one they route around."},
+    {t:"Map the system before picking a direction.",b:"In logistics and defense, the problem someone brings you is usually a symptom of how the organization is arranged. Before committing to a direction I map who is involved, what they are rewarded for, where the data comes from, and what cannot be changed."},
+    {t:"Stay in contact with users after the research phase ends.",b:"Most teams do their user research once, at the start, then rely on that picture for years while the operation changes underneath them. I keep standing relationships with primary users so the picture stays current."},
+    {t:"Delivery process sets the ceiling.",b:"How a team works determines what it can ship and how fast it can learn from being wrong. I give it the same attention I give the roadmap."},
+    {t:"A strategy nobody has sequenced is a wish.",b:"Strategies fail in execution when no one converts them into an ordered list of decisions with owners and dates. I try to keep the multi-year direction and next quarter's commitments in the same conversation."}
   ],
 
   background:{
@@ -676,8 +691,11 @@ const DATA = {
       {deg:"B.S. Industrial Technology",inst:"California Polytechnic State University, San Luis Obispo",yr:"2013"}
     ],
     certs:[
+      {n:"Udacity Agentic AI Nanodegree",yr:"In progress"},
       {n:"IDEO U: AI x Design Thinking",yr:"2026"},
       {n:"IDEO U: Prototyping with AI",yr:"2026"},
+      {n:"Udacity AI for Business Leaders Nanodegree",yr:"2026"},
+      {n:"Udacity Digital Transformation for Business Leaders Nanodegree",yr:"2026"},
       {n:"Stanford University Product Management Program",yr:"2024"},
       {n:"Google Project Management Professional Certificate",yr:"2022"},
       {n:"SAFe Agile Product Owner/Product Manager – St. Louis University",yr:"2022"},
@@ -691,22 +709,17 @@ const DATA = {
     ],
     awards:[
       {n:"Tapestry Outstanding Team Award",ctx:"Boeing logistics program",yr:"2025"},
-      {n:"Tapestry Outstanding Contributor Award",ctx:"Third recognition — Boeing",yr:"2021"},
-      {n:"Tapestry Outstanding Contributor Award",ctx:"Second recognition — Boeing",yr:"2019"},
-      {n:"Tapestry Outstanding Contributor Award",ctx:"First recognition — Boeing",yr:"2017"}
+      {n:"Tapestry Outstanding Contributor Award",ctx:"Third recognition, Boeing",yr:"2021"},
+      {n:"Tapestry Outstanding Contributor Award",ctx:"Second recognition, Boeing",yr:"2019"},
+      {n:"Tapestry Outstanding Contributor Award",ctx:"First recognition, Boeing",yr:"2017"}
     ]
   },
 
   contact:{
     email:"bradkunisaki@gmail.com",
     linkedin:"linkedin.com/in/bkunisaki",
-    lookingFor:[
-      "AI product leadership in complex, high-stakes domains",
-      "Defense, government, or logistics product roles",
-      "0→1 product strategy with mission-driven organizations",
-      "Environments that value systems thinking and deep user empathy"
-    ],
-    note:"I'm at my best on problems that are technically complex, organizationally messy, and genuinely important — the kind where you have to earn the trust of both the customer and the product before anything else works. If that's the kind of work you're building toward, I'd like to talk."
+    lookingFor:"Product leadership on logistics and defense systems where the technology is solvable and adoption is the hard part.",
+    note:"I'm at my best on problems that are technically complex and organizationally messy at the same time, where you have to earn the trust of the customer and the product before anything else works. If that's the kind of work you're building toward, I'd like to talk."
   }
 };
 
@@ -961,7 +974,7 @@ function renderContact() {
       </div>
       <div class="ct-card">
         <div class="ct-hd">What I'm Looking For</div>
-        <ul class="lk-list">${c.lookingFor.map(l => '<li>'+l+'</li>').join('')}</ul>
+        <div class="lk-one">${c.lookingFor}</div>
       </div>
     </div>
   </div>`;
@@ -1001,8 +1014,8 @@ function buildPrintResume() {
 
   // Education + top certs split into two columns
   const edu = DATA.background.education[0];
-  // Show top 6 certs on resume (space-constrained)
-  const topCerts = DATA.background.certs.slice(0, 6);
+  // Show top 8 certs on resume (space-constrained)
+  const topCerts = DATA.background.certs.slice(0, 8);
   const awards = DATA.background.awards;
 
   const today = new Date().toLocaleDateString('en-US', {month:'long', year:'numeric'});

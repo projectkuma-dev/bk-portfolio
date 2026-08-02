@@ -219,6 +219,12 @@ body{background:var(--bg);color:var(--tx);font-family:var(--fb);font-size:15px;l
   .tb{padding:5px 9px;font-size:12.5px}
   .print-btn span{display:none}
   .print-btn{padding:5px 8px}
+  /* Let the tab strip scroll instead of pushing the action buttons off-screen */
+  .hd-right{flex-shrink:1;min-width:0}
+  .tabs{overflow-x:auto;min-width:0;scrollbar-width:none;-ms-overflow-style:none}
+  .tabs::-webkit-scrollbar{display:none}
+  .tb{flex-shrink:0}
+  .hd-divider,.print-btn{flex-shrink:0}
   .sk-layout{grid-template-columns:1fr}
   .ct-layout{grid-template-columns:1fr}
   .ip-grid{grid-template-columns:1fr}
@@ -486,6 +492,10 @@ body{background:var(--bg);color:var(--tx);font-family:var(--fb);font-size:15px;l
         <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M4 1h8a1 1 0 0 1 1 1v3H3V2a1 1 0 0 1 1-1zM2 6h12a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-1v-2H3v2H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zm9 1.5a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0zM4 11h8v3H4v-3z"/></svg>
         <span>Print Resume</span>
       </button>
+      <button class="print-btn" onclick="downloadMarkdown()" title="Download a detailed Markdown resume, structured for AI and ATS tools">
+        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8 1a.75.75 0 0 1 .75.75v6.19l2.22-2.22a.75.75 0 1 1 1.06 1.06l-3.5 3.5a.75.75 0 0 1-1.06 0l-3.5-3.5a.75.75 0 0 1 1.06-1.06l2.22 2.22V1.75A.75.75 0 0 1 8 1zM2.5 11a.75.75 0 0 1 .75.75v1.5h9.5v-1.5a.75.75 0 0 1 1.5 0v2.25a.75.75 0 0 1-.75.75H2.25a.75.75 0 0 1-.75-.75v-2.25A.75.75 0 0 1 2.5 11z"/></svg>
+        <span>Markdown</span>
+      </button>
     </div>
   </div>
 </header>
@@ -580,7 +590,8 @@ const DATA = {
         "Product Strategy Lead for TIE, an AI-powered data analytics platform for USTRANSCOM",
         "SDLC Lead for LogC2 licensed product transformation",
         "Stanford University Product Management Program (2024)",
-        "Tapestry Outstanding Team Award (2025)"
+        "Tapestry Outstanding Team Award for TIE (2025)",
+        "USMC Challenge Coin (2026), presented by the customer for multi-year contributions to a core USMC logistics tool"
       ]
     },
     {
@@ -679,9 +690,8 @@ const DATA = {
   },
 
   principles:[
-    {t:"Operator trust is the product.",b:"A model that scores well and gets ignored has produced nothing. I judge AI work by whether operators act on the output, and I would rather ship a narrower system people rely on than a broader one they route around."},
+    {t:"Customer feedback early and often.",b:"I would rather find out something is wrong in week two than at delivery, so I build customer checkpoints into the schedule from the start. Beyond any single release, I keep standing relationships with primary users, since most teams research once and then rely on that picture for years while the operation changes underneath them."},
     {t:"Map the system before picking a direction.",b:"In logistics and defense, the problem someone brings you is usually a symptom of how the organization is arranged. Before committing to a direction I map who is involved, what they are rewarded for, where the data comes from, and what cannot be changed."},
-    {t:"Stay in contact with users after the research phase ends.",b:"Most teams do their user research once, at the start, then rely on that picture for years while the operation changes underneath them. I keep standing relationships with primary users so the picture stays current."},
     {t:"Delivery process sets the ceiling.",b:"How a team works determines what it can ship and how fast it can learn from being wrong. I give it the same attention I give the roadmap."},
     {t:"A strategy nobody has sequenced is a wish.",b:"Strategies fail in execution when no one converts them into an ordered list of decisions with owners and dates. I try to keep the multi-year direction and next quarter's commitments in the same conversation."}
   ],
@@ -708,7 +718,8 @@ const DATA = {
       {n:"ISTQB Foundation Certification",yr:"2017"}
     ],
     awards:[
-      {n:"Tapestry Outstanding Team Award",ctx:"Boeing logistics program",yr:"2025"},
+      {n:"USMC Challenge Coin",ctx:"Presented by the customer for multi-year contributions to a core USMC logistics tool",yr:"2026"},
+      {n:"Tapestry Outstanding Team Award",ctx:"TIE, Boeing",yr:"2025"},
       {n:"Tapestry Outstanding Contributor Award",ctx:"Third recognition, Boeing",yr:"2021"},
       {n:"Tapestry Outstanding Contributor Award",ctx:"Second recognition, Boeing",yr:"2019"},
       {n:"Tapestry Outstanding Contributor Award",ctx:"First recognition, Boeing",yr:"2017"}
@@ -1061,6 +1072,162 @@ function buildPrintResume() {
       <span>Updated ${today}</span>
     </div>`;
 }
+
+// ═══════════════════════════════════════
+// MARKDOWN RESUME BUILDER
+// Extended version: carries the case studies,
+// inflection points and principles that the
+// one-page print resume has no room for.
+// Written for recruiter AI / ATS ingestion.
+// ═══════════════════════════════════════
+function decodeEntities(s) {
+  const t = document.createElement('textarea');
+  t.innerHTML = s;
+  return t.value;
+}
+
+function buildMarkdownResume() {
+  const d = DATA;
+  const csTitle = {};
+  d.caseStudies.forEach(cs => { csTitle[cs.id] = decodeEntities(cs.title); });
+  const updated = new Date().toLocaleDateString('en-US', {month:'long', year:'numeric'});
+  const site = document.querySelector('link[rel=canonical]');
+  const url = site ? site.href : '';
+
+  const L = [];
+  const p = s => L.push(s);
+
+  // ── header ──
+  p('# ' + d.meta.name);
+  p('');
+  p(d.meta.eyebrow);
+  p('');
+  p(d.meta.tagline);
+  p('');
+  p('- **Location:** Pismo Beach, CA');
+  p('- **Email:** ' + d.contact.email);
+  p('- **LinkedIn:** https://' + d.contact.linkedin);
+  if (url) p('- **Portfolio:** ' + url);
+  p('- **Last updated:** ' + updated);
+  p('');
+  p('> This is the extended version of this resume. It includes full case studies, career');
+  p('> context, and working principles that do not fit on the one-page printable version.');
+  p('');
+
+  // ── focus ──
+  p('## Focus');
+  p('');
+  p(d.contact.lookingFor);
+  p('');
+  p(d.contact.note);
+  p('');
+
+  // ── experience ──
+  p('## Experience');
+  p('');
+  d.timeline.forEach(t => {
+    p('### ' + t.role + ', ' + t.company);
+    p('');
+    p('*' + t.period + ' · ' + t.loc + '*');
+    p('');
+    t.ms.forEach(m => p('- ' + decodeEntities(m)));
+    p('');
+  });
+
+  // ── case studies ──
+  p('## Case Studies');
+  p('');
+  d.caseStudies.forEach(cs => {
+    p('### ' + decodeEntities(cs.title));
+    p('');
+    p('*' + cs.company + ' · ' + cs.period + ' · ' + cs.tag + '*');
+    p('');
+    p(cs.stat.l);
+    p('');
+    p('**Problem**');
+    p('');
+    p(cs.problem);
+    p('');
+    p('**Approach**');
+    p('');
+    p(cs.approach);
+    p('');
+    p('**Key contributions**');
+    p('');
+    cs.contributions.forEach(c => p('- ' + decodeEntities(c)));
+    p('');
+    p('**Outcomes**');
+    p('');
+    p(cs.outcomes);
+    p('');
+    p('**What was hard**');
+    p('');
+    p(cs.hard);
+    p('');
+  });
+
+  // ── inflection points ──
+  p('## Career Inflection Points');
+  p('');
+  d.inflectionPoints.forEach(ip => {
+    p('### ' + ip.title + ' (' + ip.period + ')');
+    p('');
+    p(ip.ctx);
+    p('');
+    p('**Why it mattered:** ' + ip.why);
+    p('');
+  });
+
+  // ── skills, with the case study that evidences each ──
+  p('## Skills');
+  p('');
+  [['Product', d.skills.product],
+   ['Technical', d.skills.technical],
+   ['Leadership', d.skills.leadership]].forEach(pair => {
+    p('### ' + pair[0]);
+    p('');
+    pair[1].forEach(s => {
+      p('- ' + s.n + (s.s && csTitle[s.s] ? ' (demonstrated in: ' + csTitle[s.s] + ')' : ''));
+    });
+    p('');
+  });
+
+  // ── principles ──
+  p('## How I Think');
+  p('');
+  d.principles.forEach(pr => {
+    p('**' + pr.t + '** ' + pr.b);
+    p('');
+  });
+
+  // ── background ──
+  p('## Education');
+  p('');
+  d.background.education.forEach(e => p('- ' + e.deg + ' · ' + e.inst + ' (' + e.yr + ')'));
+  p('');
+  p('## Certifications');
+  p('');
+  d.background.certs.forEach(c => p('- ' + c.n + ' (' + c.yr + ')'));
+  p('');
+  p('## Awards');
+  p('');
+  d.background.awards.forEach(a => p('- ' + a.n + ' · ' + a.ctx + ' (' + a.yr + ')'));
+  p('');
+
+  return L.join('\n');
+}
+
+window.downloadMarkdown = function() {
+  const blob = new Blob([buildMarkdownResume()], {type:'text/markdown;charset=utf-8'});
+  const href = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = href;
+  a.download = 'Brad-Kunisaki-Resume.md';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(() => URL.revokeObjectURL(href), 1000);
+};
 
 // ═══════════════════════════════════════
 // PRINT TRIGGER
